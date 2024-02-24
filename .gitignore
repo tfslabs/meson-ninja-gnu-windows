@@ -242,3 +242,20 @@ tmptest.dll
 # Ignore build folders
 .bin
 .cmake
+
+# Ignore PyPI
+__pycache__
+*.pyc
+build/
+dist/
+MANIFEST
+.idea/
+.ipynb_checkpoints/
+*.egg-info/
+venv/
+*.vs*
+*.exe
+
+*.msi
+*.whl
+*.out
