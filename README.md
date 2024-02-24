@@ -20,7 +20,7 @@ To build this library, you will need:
 Just run the  following commands in a terminal window to get started:
 
 ```cmd
-build.bat
+build.cmd
 ```
 
 Once it's done, you can see your `.bin` folder. You can then paste it into your GNU Windows installation folder.
