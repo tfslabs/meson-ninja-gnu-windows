@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="21.4" version="21.4" Modules="simple" RootPath="." Language="en" Id="{AB0F51FA-1C2C-4275-90B0-107024D8CD7F}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_PHYSICAL_MEMORY"/>
+    <ROW Property="AI_REQUIRED_PHYSICAL_MEMORY" MultiBuildValue="DefaultBuild:512" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Meson + Ninja Build Extension for GNU Development Kits for Windows (64-bit)" ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="welcome.tfs@outlook.com"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="gnuwindows.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/tfslabs/meson-ninja-build-gnu-windows"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/tfslabs/meson-ninja-build-gnu-windows/commits/main/"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:5"/>
+    <ROW Property="Manufacturer" Value="TheFlightSims"/>
+    <ROW Property="MsiLogging" MultiBuildValue="DefaultBuild:vp"/>
+    <ROW Property="ProductCode" Value="1033:{6971D5CC-6B70-478A-A772-847E4D5B8455} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Meson + Ninja Build Extension for GNU Windows"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{6CEE7923-2E94-4EE9-9688-6F4BA4219200}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:32-bit Windows versions" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="bin_Dir" Directory_Parent="APPDIR" DefaultDir="bin"/>
+    <ROW Directory="pypi_Dir" Directory_Parent="APPDIR" DefaultDir="pypi"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{AF874000-E4DC-4B9F-8813-D06CF36C1A62}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Path" ComponentId="{8A1EB805-6832-4173-9E4F-3D03E13C1617}" Directory_="APPDIR" Attributes="260" KeyPath="Path"/>
+    <ROW Component="Software" ComponentId="{C3FD9D4E-6169-42B1-87BE-340150AD2CDC}" Directory_="APPDIR" Attributes="260" KeyPath="Software"/>
+    <ROW Component="TheFlightSims" ComponentId="{9A9ACF27-A172-433C-8309-AF00BB858D81}" Directory_="APPDIR" Attributes="260" KeyPath="TheFlightSims"/>
+    <ROW Component="Version" ComponentId="{E5318780-E040-4ABA-A02F-15DAB45EDC0F}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="meson1.3.2.tar.gz" ComponentId="{E9481715-CBC6-46F8-801F-C3D683D438C8}" Directory_="pypi_Dir" Attributes="0" KeyPath="meson1.3.2.tar.gz" Type="0"/>
+    <ROW Component="ninja.exe" ComponentId="{362C9FC9-4431-4616-91D4-E073D88BA640}" Directory_="bin_Dir" Attributes="256" KeyPath="ninja.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ninja.exe" Component_="ninja.exe" FileName="ninja.exe" Attributes="0" SourcePath="..\..\.prepare-for-release\ninja\bin\ninja.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="meson1.3.2.tar.gz" Component_="meson1.3.2.tar.gz" FileName="MESON-~1.GZ|meson-1.3.2.tar.gz" Attributes="0" SourcePath="..\..\.prepare-for-release\meson\meson-1.3.2.tar.gz" SelfReg="false"/>
+    <ROW File="meson1.3.2py3noneany.whl" Component_="meson1.3.2.tar.gz" FileName="MESON-~1.WHL|meson-1.3.2-py3-none-any.whl" Attributes="0" SourcePath="..\..\.prepare-for-release\meson\meson-1.3.2-py3-none-any.whl" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" SummInfoMetadata="Page Count:450" UseLargeSchema="true" MsiPackageType="x64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder]\GNU Windows"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ninja.exe"/>
+    <ROW Feature_="MainFeature" Component_="Software"/>
+    <ROW Feature_="MainFeature" Component_="meson1.3.2.tar.gz"/>
+    <ROW Feature_="MainFeature" Component_="TheFlightSims"/>
+    <ROW Feature_="MainFeature" Component_="Path"/>
+    <ROW Feature_="MainFeature" Component_="Version"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="gnuwindows.exe" SourcePath="..\..\.prepare-for-release\gnu-windows.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR VersionNT64 )" Description="[ProductName] cannot be installed on [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_PHYSICAL_MEMORY &gt;= AI_REQUIRED_PHYSICAL_MEMORY" Description="[ProductName] cannot be installed on systems with less physical memory than [AI_REQUIRED_PHYSICAL_MEMORY] MB." DescriptionLocId="AI.LaunchCondition.RAM" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT &gt;= 601 AND VersionNT64" Description="Windows 7, Windows 8/Server 2012 or later, with 64-bit&#9;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="DynamicLinkingExtensionforGNUWindow" Root="2" Key="Software\TheFlightSims\Meson + Ninja Build Extension for GNU Windows" Name="\"/>
+    <ROW Registry="Path" Root="2" Key="Software\TheFlightSims\Meson + Ninja Build Extension for GNU Windows" Name="Path" Value="[APPDIR]" Component_="Path"/>
+    <ROW Registry="Software" Root="2" Key="Software" Name="+" Component_="Software"/>
+    <ROW Registry="TheFlightSims" Root="2" Key="Software\TheFlightSims" Name="+" Component_="TheFlightSims"/>
+    <ROW Registry="Version" Root="2" Key="Software\TheFlightSims\Meson + Ninja Build Extension for GNU Windows" Name="Version" Value="[ProductVersion]" Component_="Version"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
