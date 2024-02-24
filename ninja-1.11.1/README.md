@@ -27,7 +27,7 @@ via CMake. For more details see
 
 ### Python
 
-```
+```cmd
 ./configure.py --bootstrap
 ```
 
@@ -36,7 +36,7 @@ to build Ninja with itself.
 
 ### CMake
 
-```
+```cmd
 cmake -Bbuild-cmake
 cmake --build build-cmake
 ```
