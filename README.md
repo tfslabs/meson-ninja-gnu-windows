@@ -1,6 +1,7 @@
-# GNU Windows Extension
+# Meson + Ninja Build System
 
-This template helps a lot in building docs and understanding GNU Windows Extension source code, build and other related documents
+Meson® is a project to create the best possible next-generation build system.
+Ninja is a small build system with a focus on speed.
 
 ## Build this library
 
@@ -12,7 +13,8 @@ To build this library, you will need:
 
 > :warning:
 >
-> Make sure you can run `make`, `gcc`  and `g++` from the command line without any issues.
+> * Make sure you can run `make`, `gcc`  and `g++` from the command line without any issues.
+> * DO NOT install Python3 from Microsoft Store, due to various problems on the installation
 
 Just run the  following commands in a terminal window to get started:
 
