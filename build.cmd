@@ -7,7 +7,7 @@ pip install --upgrade build pyinstaller
 
 ::Build Meson
 cd meson-1.3.2
-python build.py
+python build_exe.py
 cd dist
 xcopy .\ ..\..\.bin /s /i
 cd ..\..\.bin
