@@ -46,6 +46,6 @@ choose any other name you like).
 
 To run the unit tests:
 
-```
+```cmd
 ./build-cmake/ninja_test
 ```
