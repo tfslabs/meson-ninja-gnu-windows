@@ -3,15 +3,14 @@ cd /d "%~dp0"
 
 :: Prepare environment
 md .bin
-pip install --upgrade build
+pip install --upgrade build pyinstaller
 
 ::Build Meson
 cd meson-1.3.2
-python -m build
+python build.py
 cd dist
 xcopy .\ ..\..\.bin /s /i
 cd ..\..\.bin
-pip install meson-1.3.2-py3-none-any.whl
 
 ::CD
 cd /d "%~dp0"
