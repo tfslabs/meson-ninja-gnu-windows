@@ -22,4 +22,4 @@ Just run the  following commands in a terminal window to get started:
 build.bat
 ```
 
-Once it's done, you can see your bin. You can then paste it into your GNU Windows installation folder.
+Once it's done, you can see your `.bin` folder. You can then paste it into your GNU Windows installation folder.
