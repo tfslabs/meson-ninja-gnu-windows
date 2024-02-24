@@ -1,20 +1,23 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# GNU Windows Extension
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This template helps a lot in building docs and understanding GNU Windows Extension source code, build and other related documents
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Build this library
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+To build this library, you will need:
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+* [GNU Windows](https://github.com/tfslabs/gnu-windows)
+* [CMake](https://www.cmake.org/) version 3 or newer installed on your machine. You can download it from the official website and follow their installation instructions.
+* [Python 3.9+](https://python.org)
+
+> :warning:
+>
+> Make sure you can run `make`, `gcc`  and `g++` from the command line without any issues.
+
+Just run the  following commands in a terminal window to get started:
+
+```cmd
+build.bat
+```
+
+Once it's done, you can see your bin. You can then paste it into your GNU Windows installation folder.
