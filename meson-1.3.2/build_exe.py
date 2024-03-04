@@ -14,6 +14,5 @@ PyInstaller.__main__.run([
     '--onefile',       # This option creates a single executable file
     '--name=meson',    # Specify the name for your executable (without the extension)
     '--clean',         # Cleans temporary files
-    '--collect-all',   # Collect all dependencies
     *hidden_imports   # Include all installed packages as hidden imports
 ])
