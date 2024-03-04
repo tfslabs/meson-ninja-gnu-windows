@@ -143,7 +143,7 @@
     <ROW Feature_="MainFeature" Component_="ninja.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="gnuwindows.exe" SourcePath="..\..\.prepare-for-release\gnu-windows.ico" Index="0"/>
+    <ROW Name="gnuwindows.exe" SourcePath="..\gnu-windows.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
