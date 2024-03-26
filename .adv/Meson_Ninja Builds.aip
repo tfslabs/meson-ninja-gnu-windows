@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="21.4" version="21.4" Modules="simple" RootPath="." Language="en" Id="{AB0F51FA-1C2C-4275-90B0-107024D8CD7F}">
-  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
-    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
-  </COMPONENT>
+<DOCUMENT Type="Advanced Installer" CreateVersion="19.1" version="19.1" Modules="simple" RootPath="." Language="en" Id="{A5D2C995-D008-473D-BE97-053CD4AE895B}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_PHYSICAL_MEMORY"/>
-    <ROW Property="AI_REQUIRED_PHYSICAL_MEMORY" MultiBuildValue="DefaultBuild:512" ValueLocId="-"/>
-    <ROW Property="ALLUSERS" Value="1"/>
-    <ROW Property="ARPCOMMENTS" Value="Meson + Ninja Build Extension for GNU Development Kits for Windows (64-bit)" ValueLocId="*"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2024" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:3"/>
+    <ROW Property="ARPCOMMENTS" Value="Meson + Ninja Build System Extension for GNU Windows" ValueLocId="*"/>
     <ROW Property="ARPCONTACT" Value="welcome.tfs@outlook.com"/>
+    <ROW Property="ARPHELPLINK" Value="https://github.com/tfslabs/meson-ninja-gnu-windows/issues"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPPRODUCTICON" Value="gnuwindows.exe" Type="8"/>
-    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/tfslabs/meson-ninja-build-gnu-windows"/>
-    <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/tfslabs/meson-ninja-build-gnu-windows/commits/main/"/>
-    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:5"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/tfslabs/meson-ninja-gnu-windows"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/tfslabs/meson-ninja-gnu-windows/releases"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="Manufacturer" Value="TheFlightSims"/>
     <ROW Property="MsiLogging" MultiBuildValue="DefaultBuild:vp"/>
-    <ROW Property="ProductCode" Value="1033:{6971D5CC-6B70-478A-A772-847E4D5B8455} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{3F885287-FEFA-4650-8589-71B4EC1DD374} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
-    <ROW Property="ProductName" Value="Meson + Ninja Build Extension for GNU Windows"/>
-    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="ProductName" Value="GNU Windows - Meson + Ninja Build System"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
-    <ROW Property="UpgradeCode" Value="{6CEE7923-2E94-4EE9-9688-6F4BA4219200}"/>
+    <ROW Property="UpgradeCode" Value="{3DD189DB-16C5-41E5-BD5B-16467EEC0DE0}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" ValueLocId="-"/>
@@ -32,8 +29,6 @@
     <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
-    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
-    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
     <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:32-bit Windows versions" ValueLocId="-"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
@@ -42,30 +37,28 @@
     <ROW Directory="bin_Dir" Directory_Parent="APPDIR" DefaultDir="bin"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="APPDIR" ComponentId="{AF874000-E4DC-4B9F-8813-D06CF36C1A62}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="Path" ComponentId="{8A1EB805-6832-4173-9E4F-3D03E13C1617}" Directory_="APPDIR" Attributes="260" KeyPath="Path"/>
-    <ROW Component="Software" ComponentId="{C3FD9D4E-6169-42B1-87BE-340150AD2CDC}" Directory_="APPDIR" Attributes="260" KeyPath="Software"/>
-    <ROW Component="TheFlightSims" ComponentId="{9A9ACF27-A172-433C-8309-AF00BB858D81}" Directory_="APPDIR" Attributes="260" KeyPath="TheFlightSims"/>
-    <ROW Component="Version" ComponentId="{E5318780-E040-4ABA-A02F-15DAB45EDC0F}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
-    <ROW Component="meson.exe" ComponentId="{CD5F1727-5F7D-4D24-95CB-B46EAD25780A}" Directory_="bin_Dir" Attributes="256" KeyPath="meson.exe"/>
-    <ROW Component="ninja.exe" ComponentId="{BA6BA625-F4E4-43D4-A48F-241BAB85E171}" Directory_="bin_Dir" Attributes="256" KeyPath="ninja.exe"/>
+    <ROW Component="APPDIR" ComponentId="{D11C1F46-CB48-48EC-BF06-484F25E0B0D2}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Path" ComponentId="{3CA3E9D5-1D72-4593-8976-A9F52E49A2DF}" Directory_="APPDIR" Attributes="260" KeyPath="Path"/>
+    <ROW Component="ProductID" ComponentId="{6A627F77-F7C1-4C9D-8E46-D6981E9C1355}" Directory_="APPDIR" Attributes="260" KeyPath="ProductID"/>
+    <ROW Component="TheFlightSims" ComponentId="{29C20960-F8A7-4EC2-916A-DEC7C7591E6B}" Directory_="APPDIR" Attributes="260" KeyPath="TheFlightSims"/>
+    <ROW Component="Version" ComponentId="{894657DE-C327-45CD-B990-42C123AED49B}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="isExtendable" ComponentId="{98C23719-DDDA-4F73-9E5E-A1C0CEAE2B51}" Directory_="APPDIR" Attributes="260" KeyPath="isExtendable"/>
+    <ROW Component="meson.exe" ComponentId="{D95E396A-BB35-453B-9A16-72268ADB77E8}" Directory_="bin_Dir" Attributes="256" KeyPath="meson.exe"/>
+    <ROW Component="ninja.exe" ComponentId="{C5C75D59-0891-44D7-834A-E9F162DC0C23}" Directory_="bin_Dir" Attributes="256" KeyPath="ninja.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="meson.exe" Component_="meson.exe" FileName="meson.exe" Attributes="0" SourcePath="..\.bin\bin\meson.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="ninja.exe" Component_="ninja.exe" FileName="ninja.exe" Attributes="0" SourcePath="..\.bin\bin\ninja.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="meson.exe" Component_="meson.exe" FileName="meson.exe" Attributes="0" SourcePath="..\..\.bin\ninja+meson\bootstrap\bin\meson.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ninja.exe" Component_="ninja.exe" FileName="ninja.exe" Attributes="0" SourcePath="..\..\.bin\ninja+meson\bootstrap\bin\ninja.exe" SelfReg="false" DigSign="true"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
   </COMPONENT>
-  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
-    <ROW Action="AI_DetectSoftware" Sequence="151"/>
-  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" SummInfoMetadata="Page Count:450" UseLargeSchema="true" MsiPackageType="x64"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true" MsiPackageType="x64"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
@@ -87,7 +80,6 @@
     <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
-    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
@@ -119,31 +111,29 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
-    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
-    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
-    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
-    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder]\GNU Windows"/>
-    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProductName]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:C:\gnu-windows"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
-    <ROW Feature_="MainFeature" Component_="Software"/>
-    <ROW Feature_="MainFeature" Component_="TheFlightSims"/>
-    <ROW Feature_="MainFeature" Component_="Path"/>
-    <ROW Feature_="MainFeature" Component_="Version"/>
     <ROW Feature_="MainFeature" Component_="meson.exe"/>
     <ROW Feature_="MainFeature" Component_="ninja.exe"/>
+    <ROW Feature_="MainFeature" Component_="TheFlightSims"/>
+    <ROW Feature_="MainFeature" Component_="Path"/>
+    <ROW Feature_="MainFeature" Component_="ProductID"/>
+    <ROW Feature_="MainFeature" Component_="Version"/>
+    <ROW Feature_="MainFeature" Component_="isExtendable"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="gnuwindows.exe" SourcePath="..\gnu-windows.ico" Index="0"/>
+    <ROW Name="gnuwindows.exe" SourcePath="..\..\gnu-windows\.gnu-windows\src\gnu-windows.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -152,32 +142,27 @@
     <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
-    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
-    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
     <ROW Action="AI_DpiContentScale" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
-    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
     <ROW Condition="( Version9X OR VersionNT64 )" Description="[ProductName] cannot be installed on [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
-    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
-    <ROW Condition="AI_DETECTED_PHYSICAL_MEMORY &gt;= AI_REQUIRED_PHYSICAL_MEMORY" Description="[ProductName] cannot be installed on systems with less physical memory than [AI_REQUIRED_PHYSICAL_MEMORY] MB." DescriptionLocId="AI.LaunchCondition.RAM" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64) AND VersionNT &gt;= 600 AND MsiNTProductType &gt;= 1" Description="Windows Vista/Server 2008 (64- bit) and later. Domain Controller is installable."/>
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
-    <ROW Condition="VersionNT &gt;= 601 AND VersionNT64" Description="Windows 7, Windows 8/Server 2012 or later, with 64-bit&#9;"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
-    <ROW Registry="DynamicLinkingExtensionforGNUWindow" Root="2" Key="Software\TheFlightSims\Meson + Ninja Build Extension for GNU Windows" Name="\"/>
-    <ROW Registry="Path" Root="2" Key="Software\TheFlightSims\Meson + Ninja Build Extension for GNU Windows" Name="Path" Value="[APPDIR]" Component_="Path"/>
-    <ROW Registry="Software" Root="2" Key="Software" Name="+" Component_="Software"/>
+    <ROW Registry="Path" Root="2" Key="Software\TheFlightSims\GNU Windows - Meson + Ninja Build System" Name="Path" Value="[APPDIR]" Component_="Path"/>
+    <ROW Registry="ProductID" Root="2" Key="Software\TheFlightSims\GNU Windows - Meson + Ninja Build System" Name="ProductID" Value="[ProductID]" Component_="ProductID"/>
     <ROW Registry="TheFlightSims" Root="2" Key="Software\TheFlightSims" Name="+" Component_="TheFlightSims"/>
-    <ROW Registry="Version" Root="2" Key="Software\TheFlightSims\Meson + Ninja Build Extension for GNU Windows" Name="Version" Value="[ProductVersion]" Component_="Version"/>
+    <ROW Registry="Version" Root="2" Key="Software\TheFlightSims\GNU Windows - Meson + Ninja Build System" Name="Version" Value="[ProductVersion]" Component_="Version"/>
+    <ROW Registry="isExtendable" Root="2" Key="Software\TheFlightSims\GNU Windows - Meson + Ninja Build System" Name="isExtendable" Value="#x1" Component_="isExtendable" VirtualValue="#x"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
